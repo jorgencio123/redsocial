@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css\estilo.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="img\logo.jpg" alt="">
+      </div>
+    </header>
+    <section id="formulario">
+      <form name="nuevo usuario" action="php/conexioncrearusuario.php" method="post">
+        nickname:<br>
+        <input type="text" name="nickname" value="" placeholder="ingrese su nickname" required><br>
+        contraseña:<br>
+        <input type="password" name="contraseña" maxlength="20" autocomplete="new-password" placeholder="ingrese su contraseña" required value=""><br>
+        nombre:<br>
+        <input type="text" name="nombre" placeholder="ingrese su nombre" required value=""><br>
+        apellidos:<br>
+        <input type="text" name="apellidos" placeholder="ingrese sus apellidos" required value=""><br>
+        email:<br>
+        <input type="email" name="correo" placeholder="ingrese su email" required value=""><br>
+        edad:<br>
+        <input type="number" name="edad" min="18" placeholder="ingrese su edad" required value=""><br>
+        descripcion:<br>
+        <textarea name="descripcion" placeholder="ingrese su descripcion" required></textarea><br>
+        <input type="submit" name="enviar" class="boton" value="registrate">
+        <input type="reset" class="boton" name="" value="borrar">
+
+      </form>
+
+    </section>
+
+    <section id="formulario2">
+      <h2>inicia sesion</h2>
+      <form name="contacto" action="php/iniciarsesion.php" method="post">
+        nickname<br>
+        <input type="text" name="nickname" placeholder="ingrese su nickname" required><br>
+        contraseña:<br>
+        <input type="password" name="contraseña" autocomplete="off" placeholder="ingrese su contraseña"><br>
+
+        <hr>
+        <input type="submit" name="enviar" class="boton" value="iniciar sesion">
+
+      </form>
+
+    </section>
+
+  </body>
+</html>
